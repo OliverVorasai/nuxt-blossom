@@ -6,13 +6,39 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: 'message'
-    label: 'Messages'
-    folder: 'content/messages'
+  - name: 'explanations'
+    label: 'Explanations'
+    folder: 'content/explanations'
     format: 'frontmatter'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{id}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Identifier', name: 'id', widget: 'string' }
+
+  - name: 'portfolios'
+    label: 'Portfolios'
+    folder: 'content/portfolios'
+    format: 'frontmatter'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{id}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Launch Date', name: 'launchDate', widget: 'date' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Identifier', name: 'id', widget: 'string' }
+
+  - name: 'packages'
+    label: 'Packages'
+    folder: 'content/packages'
+    format: 'frontmatter'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{id}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Price', name: 'price', widget: 'number' }
+      - { label: 'Features', name: 'features', widget: 'list' }
       - { label: 'Identifier', name: 'id', widget: 'string' }
