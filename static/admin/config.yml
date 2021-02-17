@@ -40,5 +40,10 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Price', name: 'price', widget: 'number' }
-      - { label: 'Features', name: 'features', widget: 'list' }
+      - {
+          label: 'Features',
+          name: 'features',
+          widget: 'list',
+          field: { label: 'Feature', name: 'feature', widget: 'String' },
+        }
       - { label: 'Identifier', name: 'id', widget: 'string' }
