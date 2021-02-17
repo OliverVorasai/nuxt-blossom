@@ -44,6 +44,6 @@ collections:
           label: 'Features',
           name: 'features',
           widget: 'list',
-          field: { label: 'Feature', name: 'feature', widget: 'String' },
+          field: { label: 'Feature', name: 'feature', widget: 'string' },
         }
       - { label: 'Identifier', name: 'id', widget: 'string' }
