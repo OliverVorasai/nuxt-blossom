@@ -2,9 +2,7 @@
   <v-app>
     <v-app-bar absolute flat app> </v-app-bar>
     <v-main>
-      <v-container>
-        <nuxt />
-      </v-container>
+      <nuxt />
     </v-main>
     <v-footer app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
