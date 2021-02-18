@@ -1,5 +1,5 @@
 ---
-title: What is Blossom
+title: What Is Blossom
 image: /img/handshake-outline.svg
 id: explanation-what-is-blossom
 ---
