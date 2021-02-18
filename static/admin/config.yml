@@ -26,6 +26,7 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{id}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Short Title', name: 'title', widget: 'string' }
       - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Launch Date', name: 'launchDate', widget: 'date' }
       - { label: 'Description', name: 'description', widget: 'string' }
