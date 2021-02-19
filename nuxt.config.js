@@ -22,6 +22,11 @@ export default {
         rel: 'preconnect',
         href: 'https://fonts.gstatic.com',
       },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Newsreader:wght@200&display=swap',
+      },
     ],
   },
 
@@ -65,6 +70,17 @@ export default {
     theme: {
       dark: false,
       themes: {
+        light: {
+          // Spring Cherry Blossoms Palette
+          // #ec275f dark red
+          // #f25477 red
+          // #ffa7a6 dark pink
+          // #ffdcdc pink
+          // #d4e0ee sky blue
+          primary: '#ffdcdc',
+          accent: '#d4e0ee',
+          secondary: '#f25477',
+        },
         dark: {
           primary: colors.blue.darken2,
           accent: colors.grey.darken3,
