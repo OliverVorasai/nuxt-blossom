@@ -22,24 +22,24 @@
     </v-container>
     <!-- First Blossom Explanation -->
     <angled-border
-      :color="$vuetify.theme.themes.light.skyBlue"
+      :color="$vuetify.theme.themes.light.lightBlue"
       invert-x
     ></angled-border>
-    <color-slot :color="$vuetify.theme.themes.light.skyBlue">
+    <color-slot :color="$vuetify.theme.themes.light.lightBlue">
       <v-container>
         <v-row justify="center" align="center" class="mx-6">
           <v-col cols="12" sm="8" md="6" class="text-center">
             <explanation
               :explanations="explanations"
               explanation-id="explanation-what-is-blossom"
-              :title-color="$vuetify.theme.themes.light.red"
+              :title-color="$vuetify.theme.themes.light.lightRed"
             ></explanation>
           </v-col>
         </v-row>
       </v-container>
     </color-slot>
     <angled-border
-      :color="$vuetify.theme.themes.light.skyBlue"
+      :color="$vuetify.theme.themes.light.lightBlue"
       invert-y
     ></angled-border>
     <!-- Triple Aspect Explanation -->
@@ -86,9 +86,9 @@
           <explanation
             :explanations="explanations"
             explanation-id="explanation-low-as-possible-pricing"
-            :title-color="$vuetify.theme.themes.light.red"
-            :custom-color-one="$vuetify.theme.themes.light.red"
-            :custom-color-three="$vuetify.theme.themes.light.red"
+            :title-color="$vuetify.theme.themes.light.lightRed"
+            :custom-color-one="$vuetify.theme.themes.light.lightRed"
+            :custom-color-three="$vuetify.theme.themes.light.lightRed"
           ></explanation>
         </v-col>
       </v-row>
@@ -126,27 +126,29 @@
     </v-container>
     <!-- Second Blossom Explanation -->
     <angled-border
-      :color="$vuetify.theme.themes.light.skyBlue"
+      :color="$vuetify.theme.themes.light.lightBlue"
       invert-x
       invert-y
     ></angled-border>
-    <color-slot :color="$vuetify.theme.themes.light.skyBlue">
+    <color-slot :color="$vuetify.theme.themes.light.lightBlue">
       <v-container>
         <v-row justify="center" align="center">
           <v-col cols="12" sm="8" md="6" class="text-center">
             <explanation
               :explanations="explanations"
               explanation-id="explanation-blossom-web-design"
-              :title-color="$vuetify.theme.themes.light.red"
+              :title-color="$vuetify.theme.themes.light.lightRed"
             ></explanation>
           </v-col>
         </v-row>
       </v-container>
     </color-slot>
-    <angled-border :color="$vuetify.theme.themes.light.skyBlue"></angled-border>
+    <angled-border
+      :color="$vuetify.theme.themes.light.lightBlue"
+    ></angled-border>
     <!-- Price Package Section -->
     <v-container>
-      <v-row justify="center" align="center">
+      <v-row justify="center" align="center" class="mb-12">
         <v-col cols="10" sm="8" md="6" lg="4">
           <price-card
             :packages="packages"
@@ -182,7 +184,7 @@ export default {
     font-family: Newsreader !important;
   }
   .v-divider {
-    border-color: $primary;
+    border-color: $lightPink;
     border-width: 2px;
   }
 }
