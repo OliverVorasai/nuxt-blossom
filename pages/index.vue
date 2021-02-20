@@ -21,20 +21,27 @@
       </v-row>
     </v-container>
     <!-- First Blossom Explanation -->
-    <angled-border color="#f3fafe" invert-x></angled-border>
-    <color-slot color="#f3fafe">
+    <angled-border
+      :color="$vuetify.theme.themes.light.skyBlue"
+      invert-x
+    ></angled-border>
+    <color-slot :color="$vuetify.theme.themes.light.skyBlue">
       <v-container>
         <v-row justify="center" align="center" class="mx-6">
           <v-col cols="12" sm="8" md="6" class="text-center">
             <explanation
               :explanations="explanations"
               explanation-id="explanation-what-is-blossom"
+              :title-color="$vuetify.theme.themes.light.red"
             ></explanation>
           </v-col>
         </v-row>
       </v-container>
     </color-slot>
-    <angled-border color="#f3fafe" invert-y></angled-border>
+    <angled-border
+      :color="$vuetify.theme.themes.light.skyBlue"
+      invert-y
+    ></angled-border>
     <!-- Triple Aspect Explanation -->
     <v-container>
       <v-row justify="center" align="center" class="mx-6 mb-12">
@@ -76,17 +83,13 @@
           ></v-img>
         </v-col>
         <v-col cols="12" md="6">
-          <h2>$0 Per Month</h2>
-          <h3>For Non-Profit Organizations</h3>
-          <h2>$50 Starting Per Month</h2>
-          <h3>For Small businesses</h3>
-          <p>
-            Prices reflect the need and capabilities of all parties involved and
-            include up to 3 website pages as a starting package. More expansive
-            projects may include a custom pricing package.
-          </p>
-          <p>The website address and all content belong to you.</p>
-          <p>No security deposit, no cancellation fees.</p>
+          <explanation
+            :explanations="explanations"
+            explanation-id="explanation-low-as-possible-pricing"
+            :title-color="$vuetify.theme.themes.light.red"
+            :custom-color-one="$vuetify.theme.themes.light.red"
+            :custom-color-three="$vuetify.theme.themes.light.red"
+          ></explanation>
         </v-col>
       </v-row>
     </v-container>
@@ -122,20 +125,25 @@
       </v-row>
     </v-container>
     <!-- Second Blossom Explanation -->
-    <angled-border color="#f3fafe" invert-x invert-y></angled-border>
-    <color-slot color="#f3fafe">
+    <angled-border
+      :color="$vuetify.theme.themes.light.skyBlue"
+      invert-x
+      invert-y
+    ></angled-border>
+    <color-slot :color="$vuetify.theme.themes.light.skyBlue">
       <v-container>
         <v-row justify="center" align="center">
           <v-col cols="12" sm="8" md="6" class="text-center">
             <explanation
               :explanations="explanations"
               explanation-id="explanation-blossom-web-design"
+              :title-color="$vuetify.theme.themes.light.red"
             ></explanation>
           </v-col>
         </v-row>
       </v-container>
     </color-slot>
-    <angled-border color="#f3fafe"></angled-border>
+    <angled-border :color="$vuetify.theme.themes.light.skyBlue"></angled-border>
     <!-- Price Package Section -->
     <v-container>
       <v-row justify="center" align="center">

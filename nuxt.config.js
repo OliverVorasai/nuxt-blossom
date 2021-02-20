@@ -72,14 +72,15 @@ export default {
       themes: {
         light: {
           // Spring Cherry Blossoms Palette
-          // #ec275f dark red
-          // #f25477 red
-          // #ffa7a6 dark pink
-          // #ffdcdc pink
-          // #d4e0ee sky blue
           primary: '#ffdcdc',
           accent: '#d4e0ee',
           secondary: '#f25477',
+          darkRed: '#ec275f',
+          red: '#f25477',
+          darkPink: '#ffa7a6',
+          pink: '#ffdcdc',
+          blue: '#d4e0ee',
+          skyBlue: '#f3fafe',
         },
         dark: {
           primary: colors.blue.darken2,
