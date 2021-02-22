@@ -62,7 +62,7 @@ export default {
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY));
+  transform: rotateX(var(--rotateX, 180deg)) rotateY(var(--rotateY, 0deg));
 }
 
 .angled-border svg {
