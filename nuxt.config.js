@@ -57,6 +57,10 @@ export default {
     '@nuxt/content',
   ],
 
+  publicRuntimeConfig: {
+    recaptchaKey: process.env.SITE_RECAPTCHA_KEY,
+  },
+
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
 

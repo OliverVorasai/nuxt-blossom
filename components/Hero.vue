@@ -1,5 +1,5 @@
 <template>
-  <v-img :src="heroImgPath" height="45vh">
+  <v-img :src="heroImgPath" height="45vh" eager>
     <div class="mask">
       <v-row justify="center" align="center" class="hero-text" no-gutters>
         <v-col cols="12">
