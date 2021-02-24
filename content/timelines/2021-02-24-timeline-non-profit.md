@@ -2,18 +2,11 @@
 title: Non-Profit Organizations
 events:
   - title: Contact Us
-    body: >-
-      Send us your needs and wants for your website along with any drawings,
+    body: Send us your needs and wants for your website along with any drawings,
       pictures, and articles that will help us understand your desires. Anything
       you send to us will be kept confidential and never shown to anyone outside
       of our business. If you decide to not need our services then everything
       you send to us will be deleted permanently.
-
-
-      # test
-
-
-      asdfsdf
     image: /img/character-10.svg
   - title: Our Proposal
     body: We will send you a proposal within 5 business days detailing the
