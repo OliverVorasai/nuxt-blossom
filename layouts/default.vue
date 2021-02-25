@@ -15,7 +15,7 @@
             >
           </v-list-item-content>
         </v-list-item>
-        <v-divider></v-divider>
+        <v-divider class="nav-drawer-divider"></v-divider>
         <template v-for="item in items">
           <!-- Dropdown menu for How It Works timelines -->
           <v-list-group
@@ -162,5 +162,8 @@ export default {
 .nav-drawer {
   max-height: 100% !important;
   background-image: linear-gradient($lightRed, $darkPink);
+}
+.nav-drawer-divider {
+  border-color: white !important;
 }
 </style>
