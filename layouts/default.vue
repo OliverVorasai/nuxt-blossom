@@ -16,8 +16,8 @@
           </v-list-item-content>
         </v-list-item>
         <v-divider></v-divider>
-        <!-- Dropdown menu for How It Works timelines -->
         <template v-for="item in items">
+          <!-- Dropdown menu for How It Works timelines -->
           <v-list-group
             v-if="item.subMenu"
             :key="item.title"
