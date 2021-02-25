@@ -174,6 +174,19 @@ export default {
     const packages = await $content('packages').fetch()
     return { explanations, portfolios, packages }
   },
+  head() {
+    return {
+      title: 'High Quality Handmade Websites',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Web Design for Non-Profit and Small Businesses. Our websites are made from scratch with the highest quality.',
+        },
+      ],
+    }
+  },
 }
 </script>
 

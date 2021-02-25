@@ -55,6 +55,19 @@ export default {
     }
     return { timelines, heroImages }
   },
+  head() {
+    return {
+      title: 'How It Works',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Learn how we plan and create your website. We want you to know as much as you want before we make your website.',
+        },
+      ],
+    }
+  },
   computed: {
     timeline() {
       return this.timelines[0]
