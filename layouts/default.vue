@@ -127,7 +127,7 @@ export default {
         {
           icon: mdiHelpCircleOutline,
           title: 'How It Works',
-          to: 'how-it-works',
+          to: '/how-it-works',
           active: true,
           subMenu: [
             {
@@ -143,7 +143,7 @@ export default {
         {
           icon: mdiEmailOutline,
           title: 'Contact Us',
-          to: 'contact',
+          to: '/contact',
         },
       ],
       mdiMenu,

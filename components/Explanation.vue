@@ -6,7 +6,12 @@
       align="center"
       class="mt-6 mb-2"
     >
-      <img :src="explanation.image" width="85" />
+      <img
+        :src="explanation.image"
+        width="85px"
+        height="85px"
+        aria-hidden="true"
+      />
     </v-row>
     <v-row justify="center" class="mb-2">
       <h2
@@ -23,7 +28,12 @@
       class="mt-2 mb-6"
     >
       <span>-&nbsp;-&nbsp;-&nbsp;-&nbsp;-&nbsp;-&nbsp;</span>
-      <img :src="explanation.image" width="35" />
+      <img
+        :src="explanation.image"
+        width="35px"
+        height="35px"
+        aria-hidden="true"
+      />
       <span>&nbsp;-&nbsp;-&nbsp;-&nbsp;-&nbsp;-&nbsp;-</span>
     </v-row>
     <nuxt-content :document="explanation" class="text-h6"></nuxt-content>

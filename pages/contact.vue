@@ -124,7 +124,8 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Contact the team at Blossom Web Designs.',
+          content:
+            'Contact the team at Blossom Web Designs for help planning your next website.',
         },
       ],
     }
