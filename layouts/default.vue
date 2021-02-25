@@ -98,7 +98,7 @@
         </v-row>
       </v-container>
     </v-app-bar>
-    <v-main>
+    <v-main class="pb-0">
       <nuxt />
     </v-main>
     <footer-component></footer-component>
