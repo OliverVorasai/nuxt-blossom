@@ -45,23 +45,23 @@
     <!-- Triple Aspect Explanation -->
     <v-container>
       <v-row justify="center" align="center" class="mx-6 mb-12">
-        <v-col cols="12" sm="8">
+        <v-col cols="12" xl="8">
           <v-row justify="center">
-            <v-col cols="12" sm="7" md="4" class="text-center">
+            <v-col cols="12" sm="7" lg="4" class="text-center">
               <explanation
                 :explanations="explanations"
                 explanation-id="explanation-fast-response"
                 image-above
               ></explanation>
             </v-col>
-            <v-col cols="12" sm="7" md="4" class="text-center">
+            <v-col cols="12" sm="7" lg="4" class="text-center">
               <explanation
                 :explanations="explanations"
                 explanation-id="explanation-clean-aesthetics"
                 image-above
               ></explanation>
             </v-col>
-            <v-col cols="12" sm="7" md="4" class="text-center">
+            <v-col cols="12" sm="7" lg="4" class="text-center">
               <explanation
                 :explanations="explanations"
                 explanation-id="explanation-responsive-design"
