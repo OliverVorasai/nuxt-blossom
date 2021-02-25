@@ -8,7 +8,7 @@
             <v-col cols="12" md="6">
               <div class="hero-content">
                 <h1 class="text-h3 text-sm-h2 text-xl-h1">
-                  Web Design for Non-Profits and Small Businesses
+                  Web Design for Non-Profit and Small Businesses
                 </h1>
                 <v-divider class="mt-12"></v-divider>
               </div>
