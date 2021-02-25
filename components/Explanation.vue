@@ -4,13 +4,13 @@
       v-if="explanation.image && imageAbove"
       justify="center"
       align="center"
-      class="mt-6"
+      class="mt-6 mb-2"
     >
       <img :src="explanation.image" width="85" />
     </v-row>
     <v-row justify="center" class="mb-2">
       <h2
-        class="explanation-title"
+        class="explanation-title text-h4"
         :class="uppercaseTitle ? 'text-uppercase' : ''"
       >
         <span class="title-color">{{ title.first }} </span>{{ title.rest }}
@@ -114,15 +114,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '~vuetify/src/styles/settings/_variables';
-
 .explanation-title {
-  @media #{map-get($display-breakpoints, 'sm-and-down')} {
-    font-size: 1.5rem;
-  }
-  @media #{map-get($display-breakpoints, 'md-and-up')} {
-    font-size: 2.5rem;
-  }
   .title-color {
     color: var(--title-color);
   }
