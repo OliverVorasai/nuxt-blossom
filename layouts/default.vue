@@ -81,7 +81,12 @@
               <v-col cols="10" md="8" class="text-center">
                 <v-row justify="center">
                   <v-col cols="12">
-                    <nuxt-link to="/" aria-label="home" exact>
+                    <nuxt-link
+                      to="/"
+                      aria-label="home"
+                      class="d-sm-inline-block"
+                      exact
+                    >
                       <v-img
                         :src="require('~/assets/logo.svg')"
                         max-height="60px"
