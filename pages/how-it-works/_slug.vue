@@ -1,7 +1,7 @@
 <template>
   <div>
     <hero
-      :hero-img-path="heroImage.image"
+      :hero-img-path="require('~/assets/hero/cherry-blossom-3.jpg')"
       hero-text="How It Works"
       :sub-text="timeline.title"
     ></hero>
@@ -44,16 +44,13 @@ export default {
     const timelines = await $content('timelines')
       .where({ id: params.slug })
       .fetch()
-    const heroImages = await $content('heroimages')
-      .where({ id: 'hero-cherry-blossom-1' })
-      .fetch()
     if (timelines.length < 1) {
       error({
         statusCode: 404,
         message: 'Timeline Not Found',
       })
     }
-    return { timelines, heroImages }
+    return { timelines }
   },
   head() {
     return {
@@ -71,9 +68,6 @@ export default {
   computed: {
     timeline() {
       return this.timelines[0]
-    },
-    heroImage() {
-      return this.heroImages[0]
     },
   },
 }

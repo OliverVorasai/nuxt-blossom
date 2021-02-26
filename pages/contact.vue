@@ -1,6 +1,9 @@
 <template>
   <div>
-    <hero :hero-img-path="heroImage.image" hero-text="Contact Us"></hero>
+    <hero
+      :hero-img-path="require('~/assets/hero/cherry-blossom-2.jpg')"
+      hero-text="Contact Us"
+    ></hero>
     <v-container>
       <v-row justify="center" align="center" class="mb-12 mt-12">
         <v-col cols="12" sm="10" md="8" lg="6" class="text-center">
@@ -95,12 +98,6 @@
 
 <script>
 export default {
-  async asyncData({ $content }) {
-    const heroImages = await $content('heroimages')
-      .where({ id: 'hero-cherry-blossom-1' })
-      .fetch()
-    return { heroImages }
-  },
   data() {
     return {
       valid: true,
@@ -129,11 +126,6 @@ export default {
         },
       ],
     }
-  },
-  computed: {
-    heroImage() {
-      return this.heroImages[0]
-    },
   },
   methods: {
     validate() {
