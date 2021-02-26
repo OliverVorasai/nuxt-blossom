@@ -1,7 +1,7 @@
 <template>
   <div>
     <hero
-      :hero-img-path="heroImage.image"
+      :hero-img-path="require('~/assets/hero/cherry-blossom-3.jpg')"
       hero-text="How It Works"
       :sub-text="timeline.title"
     ></hero>
@@ -68,11 +68,6 @@ export default {
   computed: {
     timeline() {
       return this.timelines[0]
-    },
-    heroImage() {
-      return this.$store.state.heroImages.find((obj) => {
-        return obj.id === 'hero-cherry-blossom-1'
-      })
     },
   },
 }

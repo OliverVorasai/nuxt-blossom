@@ -1,6 +1,9 @@
 <template>
   <div>
-    <hero :hero-img-path="heroImage.image" hero-text="Page Not Found"></hero>
+    <hero
+      :hero-img-path="require('~/assets/hero/cherry-blossom-1.jpg')"
+      hero-text="Page Not Found"
+    ></hero>
     <v-container>
       <v-row justify="center" align="center" class="mt-6">
         <v-col v-if="error.statusCode === 404" cols="12">
@@ -63,13 +66,6 @@ export default {
     return {
       title,
     }
-  },
-  computed: {
-    heroImage() {
-      return this.$store.state.heroImages.find((obj) => {
-        return obj.id === 'hero-cherry-blossom-1'
-      })
-    },
   },
 }
 </script>
