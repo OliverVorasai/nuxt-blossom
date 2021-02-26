@@ -95,12 +95,6 @@
 
 <script>
 export default {
-  async asyncData({ $content }) {
-    const heroImages = await $content('heroimages')
-      .where({ id: 'hero-cherry-blossom-1' })
-      .fetch()
-    return { heroImages }
-  },
   data() {
     return {
       valid: true,
@@ -132,7 +126,9 @@ export default {
   },
   computed: {
     heroImage() {
-      return this.heroImages[0]
+      return this.$store.state.heroImages.find((obj) => {
+        return obj.id === 'hero-cherry-blossom-1'
+      })
     },
   },
   methods: {

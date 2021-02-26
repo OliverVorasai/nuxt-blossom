@@ -14,7 +14,7 @@
               </div>
             </v-col>
             <v-col cols="12" md="6">
-              <v-img :src="require('~/assets/nature.svg')"></v-img>
+              <v-img :src="require('~/assets/nature.svg')" eager></v-img>
             </v-col>
           </v-row>
         </v-col>

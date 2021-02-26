@@ -44,16 +44,13 @@ export default {
     const timelines = await $content('timelines')
       .where({ id: params.slug })
       .fetch()
-    const heroImages = await $content('heroimages')
-      .where({ id: 'hero-cherry-blossom-1' })
-      .fetch()
     if (timelines.length < 1) {
       error({
         statusCode: 404,
         message: 'Timeline Not Found',
       })
     }
-    return { timelines, heroImages }
+    return { timelines }
   },
   head() {
     return {
@@ -73,7 +70,9 @@ export default {
       return this.timelines[0]
     },
     heroImage() {
-      return this.heroImages[0]
+      return this.$store.state.heroImages.find((obj) => {
+        return obj.id === 'hero-cherry-blossom-1'
+      })
     },
   },
 }
