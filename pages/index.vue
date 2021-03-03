@@ -176,6 +176,18 @@ export default {
   },
   head() {
     return {
+      script: [
+        {
+          type: 'application/ld+json',
+          json: {
+            '@context': 'https://schema.org/',
+            '@type': 'WebSite',
+            '@id': 'https://blossomwebdesigns.com',
+            name: 'Blossom Web Designs',
+            url: 'https://blossomwebdesigns.com',
+          },
+        },
+      ],
       title: 'High Quality Handmade Websites',
       meta: [
         {
