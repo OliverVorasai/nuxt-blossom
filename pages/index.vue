@@ -181,9 +181,27 @@ export default {
           type: 'application/ld+json',
           json: {
             '@context': 'https://schema.org/',
-            '@type': 'WebSite',
+            '@type': 'LocalBusiness',
             '@id': 'https://blossomwebdesigns.com',
             name: 'Blossom Web Designs',
+            image: require('~/assets/logo.svg'),
+            description:
+              'Web Design for Non-Profit and Small Businesses. Our websites are made from scratch with the highest quality.',
+            openingHoursSpecification: [
+              {
+                '@type': 'OpeningHoursSpecification',
+                dayOfWeek: [
+                  'Monday',
+                  'Tuesday',
+                  'Wednesday',
+                  'Thursday',
+                  'Friday',
+                ],
+                opens: '09:00',
+                closes: '17:00',
+              },
+            ],
+            priceRange: '$0-$100',
             url: 'https://blossomwebdesigns.com',
           },
         },
